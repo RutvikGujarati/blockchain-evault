@@ -14,7 +14,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                thirdweb.
+                e_vault.
               </a>
             </span>
           </h1>
