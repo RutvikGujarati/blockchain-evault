@@ -1,0 +1,26 @@
+.navbar {
+  /* background-color: #333; */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.wallet-button {
+  background-color: #008000; /* Green color for connected button */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.wallet-button:hover {
+  background-color: #005500; /* Darker green on hover */
+}
