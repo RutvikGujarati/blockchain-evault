@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useAddress } from "@thirdweb-dev/react";
-import Connect from "./Connect"; // Import the "Connect Wallet" button component
+import Connect from "./Pages/Connect/Connect"; // Import the "Connect Wallet" button component
 import "./styles/Home.css";
 import Navbar from "./Navbar/Navbar";
 import Home from "./Pages/Home/Home";
