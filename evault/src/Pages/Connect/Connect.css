@@ -1,0 +1,57 @@
+.body{
+    margin: 0px;
+    background: rgb(0,0,112);
+    background: linear-gradient(159deg, rgba(0,0,112,1) 0%, rgba(204,204,204,1) 100%);
+    
+}
+
+.header{
+    margin-top: 0px;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    gap: 1045px;
+    padding: 0px 125px; 
+    background: rgb(0,0,112);
+    background: linear-gradient(159deg, rgba(0,0,112,1) 0%, rgba(204,204,204,1) 100%);
+  
+}
+
+.header .homelogo img{
+    width: 80px;
+   
+}
+
+.header .homebutton button{
+    font-size: larger;
+    font-weight: 600;
+    font-style: inherit;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    color: black;
+    width: 160px;
+    padding: 10px 0px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.header .homebutton button:hover{
+    border: 2px solid #000000;
+    color: #ffffff;
+    background-color: black;
+}
+
+.poster .image{
+    position: absolute;
+    padding-top: 80px;
+    display: flex; 
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.poster .image img{
+    width: 1535px;
+    height:556px;
+
+
+}
