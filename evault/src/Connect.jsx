@@ -1,17 +1,26 @@
-import React from 'react';
-import { ConnectWallet } from '@thirdweb-dev/react';
+import React from "react";
+import { ConnectWallet } from "@thirdweb-dev/react";
 
-const ConnectButton = ({ onConnect }) => {
+function Connect({ onConnect }) {
+  const connectWallet = async () => {
+    try {
+      if (window.ethereum) {
+        await window.ethereum.request({ method: "eth_requestAccounts" });
+        // Call the onConnect callback when the wallet is successfully connected
+        onConnect();
+      } else {
+        alert("Please install Metamask or another Ethereum wallet to connect.");
+      }
+    } catch (error) {
+      console.error("Error connecting to wallet:", error);
+    }
+  };
+
   return (
-    <div className='connect'>
-    <ConnectWallet
-      dropdownPosition={{
-        side: 'right',
-        align: 'center',
-      }}
-    />
-  </div>
+    <>
+    <button onClick={connectWallet}>Connect Wallet</button>
+    </>
   );
-};
+}
 
-export default ConnectButton;
+export default Connect;
