@@ -1,18 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ConnectWallet } from "@thirdweb-dev/react";
+
 import "./Navbar.css";
-// import { useLogin } from "@thirdweb-dev/react";
 
 const Navbar = () => {
-  // const { isLoading, login } = useLogin();
   return (
     <div>
       <nav className="navbar">
         <div className="Home">
-          <a href="/home">Home</a>
+          <Link to="/home">Home</Link>
         </div>
         <div className="About">
-          <a href="/About">About</a>
+          <Link to="/about">About</Link>
+        </div>
+        <div className="Vault">
+          <Link to="/vault">Vault</Link>
         </div>
         <div className="connect">
           <ConnectWallet
