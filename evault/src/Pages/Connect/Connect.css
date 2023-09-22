@@ -14,8 +14,8 @@ p{
     align-items: center;
     display: flex;
     z-index: 1;
-    gap: 900px;
-    padding: 15px 30px;   
+    gap: 953px;
+    padding: 5px 30px;   
     background-color: #A5BEEE;
 }
 
@@ -28,31 +28,30 @@ p{
 .body .header .homelogo{
     animation: my-gif-animation 1s infinite;
     margin-left: 50px;
-    margin-right: 80px;
     
 }
 
 .homebutton{
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 .homebutton button{
-    font-size: larger;
-    font-weight: 600;
-    font-style: inherit;
-    border-radius: 10px;
-    border: 2px solid #FFFFFF;
-    color: black;
-    width: 160px;
-    padding: 10px 0px;
-    background-color: white;
-    cursor: pointer;
+    background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%) !important;
+    margin: 10px !important;
+    padding: 15px 15px !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    transition: 0.5s !important;
+    background-size: 200% auto !important;
+    color: white !important;            
+    box-shadow: 0 0 20px #eee !important;
+    border-radius: 10px !important;
+    display: block!important;
+  
 }
 
 .homebutton button:hover{
-    border: 2px solid #120B4D;
-    color: #ffffff;
-    background-color: #120B4D;
+    background-position: right center !important;
 }
 
 .homebuttonbottom button{
